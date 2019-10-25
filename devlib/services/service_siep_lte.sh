@@ -7,7 +7,7 @@ servicio_siep_lte() {
    MOUNT_COMMAND=""
    if [ $MOUNT_VOLUME == 1 ]
 	then
-	   MOUNT_COMMAND="-v ${CURRENT_DIR}/siep-lte:/var/www/html"
+	   MOUNT_COMMAND="-v ${CURRENT_DIR}/forks/siep-lte:/var/www/html"
 	pwd
    fi
 

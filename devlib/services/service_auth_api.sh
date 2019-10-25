@@ -7,7 +7,7 @@ servicio_siep_auth_api() {
    if [ $MOUNT_VOLUME == 1 ]
 	then
 	   echo -e "MONTANDO VOLUMEN"
-	   MOUNT_COMMAND="-v ${CURRENT_DIR}/apis/lumen-auth-api:/var/www/html"
+	   MOUNT_COMMAND="-v ${CURRENT_DIR}/forks/siep-auth-api:/var/www/html"
 	pwd
    fi
  

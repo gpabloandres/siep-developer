@@ -7,7 +7,7 @@ servicio_siep_cake() {
    MOUNT_COMMAND=""
    if [ $MOUNT_VOLUME == 1 ]
 	then
-	   MOUNT_COMMAND="-v ${CURRENT_DIR}/siep:/var/www/html"
+	   MOUNT_COMMAND="-v ${CURRENT_DIR}/forks/siep:/var/www/html"
 	pwd
    fi
 
