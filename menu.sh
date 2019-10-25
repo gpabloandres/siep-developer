@@ -91,23 +91,19 @@ eliminar_conenedores () {
 } 
 
 remove_current_install() {
-  sudo rm -rf ${CURRENT_DIR}/siep
-  sudo rm -rf ${CURRENT_DIR}/siep-lte
-  sudo rm -rf ${CURRENT_DIR}/siep-admin
-  sudo rm -rf ${CURRENT_DIR}/siep-pwa
-  sudo rm -rf ${CURRENT_DIR}/apis
-  mkdir ${CURRENT_DIR}/apis
+  sudo rm -rf ${CURRENT_DIR}/forks
+  mkdir ${CURRENT_DIR}/forks
 }
 
 download_forks() {
   # Cona repos
-  cd ${CURRENT_DIR} && git clone https://github.com/${1}/siep.git
-  cd ${CURRENT_DIR} && git clone https://github.com/${1}/siep-lte.git
-  cd ${CURRENT_DIR} && git clone https://github.com/${1}/siep-admin.git
-  cd ${CURRENT_DIR} && git clone https://github.com/${1}/siep-pwa.git
-  cd ${CURRENT_DIR}/apis && git clone https://github.com/${1}/lumen-auth-api.git
-  cd ${CURRENT_DIR}/apis && git clone https://github.com/${1}/node-http-proxy.git
-  cd ${CURRENT_DIR}/apis && git clone https://github.com/${1}/LaravelApi.git
+  cd ${CURRENT_DIR}/forks && git clone https://github.com/${1}/siep.git
+  cd ${CURRENT_DIR}/forks && git clone https://github.com/${1}/siep-lte.git
+  cd ${CURRENT_DIR}/forks && git clone https://github.com/${1}/siep-admin.git
+  cd ${CURRENT_DIR}/forks && git clone https://github.com/${1}/siep-pwa.git
+  cd ${CURRENT_DIR}/forks && git clone https://github.com/${1}/siep-auth-api.git
+  cd ${CURRENT_DIR}/forks && git clone https://github.com/${1}/siep-api-gateway.git
+  cd ${CURRENT_DIR}/forks && git clone https://github.com/${1}/siep-laravel-api.git
 }
 
 downloader () {

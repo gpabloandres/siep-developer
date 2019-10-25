@@ -6,8 +6,8 @@ servicio_siep_api_gw() {
    MOUNT_COMMAND=""
    if [ $MOUNT_VOLUME == 1 ]
 	then
-	   cd ${CURRENT_DIR}/apis/node-http-proxy/app && npm install
-	   MOUNT_COMMAND="-v ${CURRENT_DIR}/apis/node-http-proxy/app:/siep-gw"
+	   cd ${CURRENT_DIR}/forks/siep-api-gateway/app && npm install
+	   MOUNT_COMMAND="-v ${CURRENT_DIR}/forks/siep-api-gateway/app:/siep-gw"
 	pwd
    fi
    sudo docker run -itd --name $SIEP_API_GW \

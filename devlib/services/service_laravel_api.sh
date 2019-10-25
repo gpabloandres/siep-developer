@@ -6,7 +6,7 @@ servicio_siep_laravel_api() {
    MOUNT_COMMAND=""
    if [ $MOUNT_VOLUME == 1 ]
 	then
-	   MOUNT_COMMAND="-v ${CURRENT_DIR}/apis/LaravelApi:/var/www/html"
+	   MOUNT_COMMAND="-v ${CURRENT_DIR}/forks/siep-laravel-api:/var/www/html"
 	pwd
    fi
  
